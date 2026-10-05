@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — TWIRVALL</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.65;
+         max-width: 720px; margin: 0 auto; padding: 32px 20px 80px; color: #1a1a1a; background: #fff; }
+  @media (prefers-color-scheme: dark) { body { color: #e8e8e8; background: #111; } a { color: #FF7A33; } }
+  h1 { font-size: 28px; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 19px; margin: 34px 0 8px; }
+  .updated { color: #666; font-size: 14px; margin: 0 0 28px; }
+  @media (prefers-color-scheme: dark) { .updated { color: #999; } }
+  table { border-collapse: collapse; width: 100%; margin: 14px 0; font-size: 15px; }
+  th, td { text-align: left; padding: 8px 10px 8px 0; border-bottom: 1px solid #ddd; vertical-align: top; }
+  @media (prefers-color-scheme: dark) { th, td { border-color: #333; } }
+  th { font-size: 13px; text-transform: uppercase; letter-spacing: .05em; color: #666; }
+  @media (prefers-color-scheme: dark) { th { color: #999; } }
+  a { color: #C4410A; }
+  .box { border-left: 3px solid #FF5C00; padding: 10px 14px; margin: 18px 0; background: rgba(255,92,0,.06); }
+  code { font-family: ui-monospace, Menlo, monospace; font-size: .9em; }
+</style>
+</head>
+<body>
+
+<h1>Política de Privacidade da TWIRVALL</h1>
+<p class="updated">Última actualização: 13 de Setembro de 2026</p>
+
+<p>A TWIRVALL (anteriormente RideAtlas) é uma aplicação para motociclistas: permite criar e partilhar roteiros, participar em comunidades, conversar, registar a manutenção da mota e comprar e vender equipamento entre utilizadores. Esta política explica que dados são recolhidos, porquê, e o que podes fazer quanto a isso.</p>
+
+<div class="box">
+<strong>Responsável pelo tratamento:</strong> a TWIRVALL é um projecto pessoal, mantido por um particular.<br>
+<strong>Contacto:</strong> <a href="mailto:twirvall@gmail.com">twirvall@gmail.com</a> <span class="old-mail">(o endereço anterior, rideatlasmotard@gmail.com, continua a ser lido)</span>
+</div>
+
+<h2>Que dados recolhemos</h2>
+
+<table>
+<thead><tr><th>Dados</th><th>Porquê</th><th>Quando</th></tr></thead>
+<tbody>
+<tr><td>Email e palavra-passe</td><td>Criar e autenticar a tua conta</td><td>No registo</td></tr>
+<tr><td>Nome de utilizador, nome, biografia, fotografia de perfil</td><td>Identificar-te perante os outros membros</td><td>Quando preenches o perfil</td></tr>
+<tr><td>Número de telefone</td><td>Contacto em anúncios do mercado</td><td>Opcional, só se o indicares</td></tr>
+<tr><td>Localização</td><td>Mostrar a tua posição no mapa e partilhar em grupo durante um passeio</td><td>Só com a app aberta e só quando activas a partilha</td></tr>
+<tr><td>Fotografias</td><td>Publicações, conversas, anúncios, fotos da mota e capas de roteiro</td><td>Quando escolhes enviar</td></tr>
+<tr><td>Conteúdo que publicas</td><td>Publicações, mensagens, comentários, roteiros, anúncios e eventos</td><td>Quando publicas</td></tr>
+<tr><td>Dados da tua mota e manutenção</td><td>Funcionalidade de garagem: revisões, combustível, equipamento</td><td>Quando os registas</td></tr>
+<tr><td>Contactos de emergência</td><td>Função SOS</td><td>Quando os adicionas</td></tr>
+<tr><td>Identificador de notificações e idioma da app</td><td>Enviar notificações para o teu dispositivo, na tua língua</td><td>Se autorizares notificações</td></tr>
+</tbody>
+</table>
+
+<p>Não recolhemos dados que não estejam nesta tabela. Não usamos publicidade, não fazemos perfis de comportamento e não vendemos dados a ninguém.</p>
+
+<h2>A quem os dados são transmitidos</h2>
+
+<p>A TWIRVALL assenta em serviços de terceiros para funcionar. Cada um recebe apenas o necessário:</p>
+
+<table>
+<thead><tr><th>Serviço</th><th>Para quê</th><th>O que recebe</th></tr></thead>
+<tbody>
+<tr><td>Supabase</td><td>Base de dados, autenticação e armazenamento de ficheiros</td><td>Todos os dados da conta e do conteúdo</td></tr>
+<tr><td>Expo</td><td>Entrega de notificações</td><td>Identificador do dispositivo e texto da notificação</td></tr>
+<tr><td>Anthropic</td><td>Tradução de roteiros</td><td>O título e a descrição do roteiro que pedes para traduzir</td></tr>
+<tr><td>OpenStreetMap</td><td>Pesquisa de moradas e pontos de interesse</td><td>Coordenadas e termos pesquisados</td></tr>
+<tr><td>Open-Meteo</td><td>Previsão meteorológica de um roteiro</td><td>Coordenadas do roteiro</td></tr>
+</tbody>
+</table>
+
+<p>Nenhum destes serviços recebe a tua palavra-passe, que nunca é visível para nós — é guardada cifrada pelo Supabase.</p>
+
+<h2>Durante quanto tempo</h2>
+
+<p>Os dados da tua conta são guardados enquanto a conta existir. Quando apagas a conta, os dados pessoais são eliminados de imediato (ver secção seguinte). Cópias de segurança do Supabase podem reter dados por um período adicional limitado antes de serem sobrepostas.</p>
+
+<h2>Apagar a tua conta</h2>
+
+<p>Podes apagar a conta a qualquer momento, dentro da app, em <strong>Rider → Apagar conta</strong>. Não é preciso pedir-nos nada.</p>
+
+<p>Ao apagar a conta:</p>
+<ul>
+<li>São eliminados: email e autenticação, nome, biografia, fotografia, telefone, motas, registos de manutenção, contactos de emergência, anúncios do mercado, localizações partilhadas, identificador de notificações e idioma da app.</li>
+<li><strong>Não é eliminado:</strong> o conteúdo que publicaste em espaços partilhados — publicações, mensagens, comentários, roteiros e grupos que criaste. Esse conteúdo passa a aparecer sem o teu nome, atribuído a um utilizador removido.</li>
+</ul>
+
+<p>A razão é simples: apagar as tuas mensagens apagaria metade das conversas de outras pessoas, e apagar um grupo que criaste levaria com ele o histórico de todos os membros. Se quiseres que conteúdo específico seja apagado além disto, escreve para o contacto acima.</p>
+
+<h2>Os teus direitos</h2>
+
+<p>Ao abrigo do RGPD, tens direito a aceder aos teus dados, corrigi-los, apagá-los, limitar o tratamento, opor-te a ele e receber uma cópia num formato legível. A correcção e o apagamento estão disponíveis directamente na app; para os restantes, usa o contacto acima.</p>
+
+<p>Tens também o direito de apresentar reclamação à Comissão Nacional de Protecção de Dados.</p>
+
+<h2>Segurança</h2>
+
+<p>O acesso aos dados é controlado ao nível da base de dados por políticas que garantem que cada utilizador só lê o que lhe diz respeito. As comunicações são cifradas. Fotografias de grupos e conversas são guardadas em armazenamento privado, acessível apenas por ligações temporárias geradas no momento.</p>
+
+<h2>Menores</h2>
+
+<p>A TWIRVALL não se destina a menores de 16 anos. Se tomarmos conhecimento de uma conta de um menor de 16 anos, será eliminada.</p>
+
+<h2>Alterações a esta política</h2>
+
+<p>Se esta política mudar de forma significativa, a alteração será anunciada na app antes de entrar em vigor. A data no topo indica a última revisão.</p>
+
+<hr style="margin:40px 0;border:0;border-top:1px solid #ddd">
+<p style="font-size:14px;color:#666"><a href="termos.html">Termos de Utilização</a> · <a href="privacy.html">English version</a></p>
+
+</body>
+</html>

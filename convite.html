@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Convite TWIRVALL</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.6;
+         max-width: 480px; margin: 0 auto; padding: 48px 22px 64px; color: #1a1a1a; background: #fff; }
+  @media (prefers-color-scheme: dark) { body { color: #e8e8e8; background: #111; } }
+  .mark { font-size: 12px; font-weight: 800; letter-spacing: .22em; color: #FF5C00; margin: 0 0 18px; }
+  h1 { font-size: 27px; line-height: 1.2; margin: 0 0 10px; }
+  .sub { color: #666; margin: 0 0 30px; font-size: 15px; }
+  @media (prefers-color-scheme: dark) { .sub { color: #999; } }
+  .group { font-weight: 700; color: inherit; }
+  a.btn {
+    display: block; text-align: center; text-decoration: none;
+    padding: 15px 18px; border-radius: 12px; margin-bottom: 12px;
+    font-size: 16px; font-weight: 700;
+  }
+  a.primary { background: #FF5C00; color: #fff; }
+  a.secondary { border: 1px solid #ddd; color: inherit; font-weight: 600; }
+  @media (prefers-color-scheme: dark) { a.secondary { border-color: #333; } }
+  .note { color: #666; font-size: 13.5px; margin-top: 26px; }
+  @media (prefers-color-scheme: dark) { .note { color: #999; } }
+  footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid #ddd; color: #666; font-size: 13px; }
+  @media (prefers-color-scheme: dark) { footer { border-color: #333; color: #999; } }
+  footer a { color: #C4410A; }
+  @media (prefers-color-scheme: dark) { footer a { color: #FF7A33; } }
+</style>
+</head>
+<body>
+
+<p class="mark">TWIRVALL</p>
+<h1 id="title">Foste convidado a andar connosco</h1>
+<p class="sub" id="sub">A TWIRVALL é a app para motociclistas: roteiros, grupos, garagem e mercado entre motards.</p>
+
+<a class="btn primary" id="install" href="https://apps.apple.com/app/id6787726993">Instalar a TWIRVALL</a>
+<a class="btn secondary" id="open" href="rideatlas://" style="display:none">Já tenho a app — abrir o grupo</a>
+
+<p class="note" id="note">Depois de instalares, volta a ler este código: ele abre o grupo directamente na app.</p>
+
+<footer>
+  <a href="index.html">Documentos legais</a> ·
+  <a href="mailto:twirvall@gmail.com">twirvall@gmail.com</a> <span class="old-mail">(o endereço anterior, rideatlasmotard@gmail.com, continua a ser lido)</span>
+</footer>
+
+<script>
+  // O QR do MotoPass aponta para esta página com ?g=<id do grupo> e, quando há,
+  // ?n=<nome>. Quem ainda não tem a app vê o botão de instalar; quem já a tem
+  // abre o grupo pelo esquema próprio. Só por isto é que o QR aponta para uma
+  // página https e não directamente para `rideatlas://` — um QR com o esquema
+  // próprio não dá nada a quem não tem a app instalada.
+  var p = new URLSearchParams(location.search);
+  var g = p.get('g');
+  var n = p.get('n');
+  // Só ids no formato uuid: o valor vem de um QR que qualquer pessoa pode
+  // fabricar, e é usado para construir um link.
+  var isUuid = g && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(g);
+
+  if (n) {
+    // textContent, nunca innerHTML — o nome vem de fora.
+    document.getElementById('title').textContent = 'Convite para ' + n;
+    document.getElementById('sub').textContent =
+      'Instala a TWIRVALL e entra no grupo ' + n + ': roteiros, chat, eventos e garagem, num só sítio.';
+  }
+
+  if (isUuid) {
+    var open = document.getElementById('open');
+    open.href = 'rideatlas://groups/' + g;
+    open.style.display = 'block';
+  } else {
+    document.getElementById('note').textContent =
+      'Roteiros, grupos, garagem e mercado entre motards. Gratuita, sem publicidade.';
+  }
+</script>
+
+</body>
+</html>
