@@ -1,7 +1,7 @@
 # TWIRVALL — Documentos legais
 
 Política de privacidade, termos de utilização e página do convite da aplicação
-TWIRVALL (anteriormente RideAtlas), publicados por GitHub Pages em
+TWIRVALL, publicados por GitHub Pages em
 **https://twirvall.com**.
 
 A fonte destes ficheiros vive no repositório da app, em `docs/legal/`. Este
