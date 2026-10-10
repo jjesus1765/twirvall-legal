@@ -25,7 +25,7 @@
 <body>
 
 <h1>TWIRVALL Privacy Policy</h1>
-<p class="updated">Last updated: 8 October 2026</p>
+<p class="updated">Last updated: 10 October 2026</p>
 
 <p>TWIRVALL is an app for motorcyclists: it lets you create and share routes, join communities, chat, keep track of your bike's servicing, and buy and sell gear with other riders. This policy explains what data is collected, why, and what you can do about it.</p>
 
@@ -39,7 +39,8 @@
 <table>
 <thead><tr><th>Data</th><th>Why</th><th>When</th></tr></thead>
 <tbody>
-<tr><td>Email and password</td><td>To create and authenticate your account</td><td>At sign-up</td></tr>
+<tr><td>Email and password</td><td>To create and authenticate your account</td><td>At sign-up by email</td></tr>
+<tr><td>If you sign in with Apple or Google: the account identifier, email and name</td><td>To create and authenticate your account without a TWIRVALL password. With Apple's Hide My Email, we only receive an Apple relay address</td><td>When you choose Sign in with Apple or Continue with Google</td></tr>
 <tr><td>Username, name, bio, profile photo</td><td>To identify you to other members</td><td>When you fill in your profile</td></tr>
 <tr><td>Phone number</td><td>Contact details on marketplace listings</td><td>Optional, only if you provide it</td></tr>
 <tr><td>Location</td><td>To show your position on the map and share it with a group during a ride</td><td>Only with the app open, and only when you turn sharing on</td></tr>
@@ -62,6 +63,8 @@
 <thead><tr><th>Service</th><th>What for</th><th>What it receives</th></tr></thead>
 <tbody>
 <tr><td>Supabase</td><td>Database, authentication and file storage</td><td>All account and content data</td></tr>
+<tr><td>Apple</td><td>Sign in with Apple, if you choose it</td><td>That you are signing in to TWIRVALL. Apple returns your account identifier and email (or the relay address) and, the first time, your name</td></tr>
+<tr><td>Google</td><td>Continue with Google, if you choose it</td><td>That you are signing in to TWIRVALL. Google returns your account identifier, email, name and profile photo</td></tr>
 <tr><td>Expo</td><td>Notification delivery</td><td>Device identifier and notification text</td></tr>
 <tr><td>Anthropic</td><td>Route translation</td><td>The title and description of the route you ask to translate</td></tr>
 <tr><td>OpenStreetMap</td><td>Address and point-of-interest search</td><td>Coordinates and search terms</td></tr>
@@ -69,7 +72,7 @@
 </tbody>
 </table>
 
-<p>None of these services receives your password, which is never visible to us — it is stored encrypted by Supabase.</p>
+<p>None of these services receives your password, which is never visible to us — it is stored encrypted by Supabase. If you sign in with Apple or Google, there is no TWIRVALL password, and your Apple or Google password never passes through us.</p>
 
 <h2>How long we keep it</h2>
 
@@ -81,9 +84,11 @@
 
 <p>When you delete your account:</p>
 <ul>
-<li>Deleted: email and sign-in, name, bio, photo, phone, motorcycles, servicing records, emergency contacts, marketplace listings, shared locations, recorded trips, notification identifier and app language.</li>
+<li>Deleted: email and sign-in (including the link to Apple or Google), name, bio, photo, phone, motorcycles, servicing records, emergency contacts, marketplace listings, shared locations, recorded trips, notification identifier and app language.</li>
 <li><strong>Not deleted:</strong> content you posted in shared spaces — posts, messages, comments, routes, groups you created, and places, place reviews and place photos. That content stays, attributed to a removed user instead of your name.</li>
 </ul>
+
+<p>If you created your account with Apple, deleting it asks you to confirm with Apple and revokes TWIRVALL's access to your Apple account. With Google, you can also remove access at <em>myaccount.google.com → Security → Third-party apps &amp; services</em>.</p>
 
 <p>The reason is straightforward: deleting your messages would delete half of other people's conversations, and deleting a group you created would take every member's history with it. If you want specific content removed beyond this, write to the contact address above.</p>
 
